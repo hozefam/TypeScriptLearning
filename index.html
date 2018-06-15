@@ -9,12 +9,26 @@
     <!-- <script src="app.js"></script> -->
     <!-- <script src="app2.js"></script> -->
     <!-- <script src="app3.js"></script> -->
+    <!-- <script src="circleMath.js"></script>
+    <script src="rectangleMath.js"></script> -->
+    <!-- <script src="app4.js"></script> -->
+    <!-- <script src="app5.js"></script> -->
+    <script src="node_modules/systemjs/dist/system.js"></script>
     <!-- <script src="exercise1.js"></script> -->
     <!-- <script src="exercise2.js"></script> -->
-    <script src="exercise3.js"></script>
+    <!-- <script src="exercise3.js"></script> -->
 </head>
 
 <body>
+    <script>
+        SystemJS.config({
+            baseURL: '/',
+            packages: {
+                '/': { defaultExtension: 'js' }
+            }
+        });
+        SystemJS.import('app5.js');
+    </script>
     <h1>Hello</h1>
 </body>
 
